@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
 </head>
-
+<!-- git comandos -->
+    <!-- git add .
+         git commit -m "descripcion"
+         git push 
+         -->
 <body>
 
   <!-- HEADER -->
-  <header>
-    <h1>Marcos Soliz</h1>
-    <p>Desarrollador Frontend </p>
-
+  <header id="site-header">
+    <!--  -->
     <!-- NAV -->
     <nav>
       <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li ><a href="#sobre-mi">Sobre mí</a></li>
+        <li ><a href="#proyectos">Proyectos</a></li>
+        <li ><a href="#habilidades">Habilidades</a></li>
+        <li ><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
+
 
   <!-- MAIN -->
   <main>
 
     <!-- SECTION -->
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-
-      <p>
-        Actualmente estoy aprendiendo
-        <strong>HTML, CSS y React</strong>
-        para convertirme en desarrollador web.
-      </p>
-
-      <p>
-        Me gusta el voleibol, la tecnología y construir proyectos reales.
-      </p>
-
-      <img
-        src="https://via.placeholder.com/300"
-        alt="Foto de perfil de Marcos"
-      >
+    <section id="hero">
+      <div class="hero-texto">
+        <h1>Hola, soy <span>Marcos Soliz</span></h1>
+        <p class="hero-rol">Desarrollador</p>
+        <p class="hero-desc">Creo apps e interfaces limpias y funcionales</p>
+        <a href="#proyectos" class="hero-cta">
+          Ver proyectos ->
+        </a>
+      </div>
+      <div class="hero-imagen">
+        <img class="logo" src="./assets/logo.png" alt="logo_marcos">
+      </div>
     </section>
 
     <!-- SECTION -->
     <section id="proyectos">
-      <h2>Proyectos</h2>
+      <h2 class="texto-principal" >Proyectos</h2>
 
       <!-- ARTICLE -->
       <article>
-        <h3>Landing Page de gimnasio</h3>
+        <h3 class="texto-secundario">Landing Page de gimnasio</h3>
 
         <p>
           Página enfocada en promocionar membresías y rutinas.
@@ -63,7 +66,7 @@
       </article>
 
       <article>
-        <h3>App de tareas</h3>
+        <h3 class="texto-secundario" >App de tareas</h3>
 
         <p>
           Aplicación para organizar tareas usando React.
@@ -75,7 +78,7 @@
 
     <!-- SECTION -->
     <section id="habilidades">
-      <h2>Habilidades</h2>
+      <h2 class="texto-principal" >Habilidades</h2>
 
       <ul>
         <li>HTML</li>
@@ -87,7 +90,7 @@
 
     <!-- SECTION -->
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2 class="texto-principal" >Contacto</h2>
 
       <!-- FORM -->
       <form>
