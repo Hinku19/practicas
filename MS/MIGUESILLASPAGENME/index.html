@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGENME</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f5d76e;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2b2118;
+            text-align: center;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff8e1;
+            border: 4px solid #2b2118;
+            border-radius: 8px;
+            padding: 30px 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: #b3261e;
+            margin: 0 0 15px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 0 0 10px;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin: 0 0 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .fotos {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .fotos img {
+            width: 30%;
+            height: 280px;
+            object-fit: cover;
+            border: 4px solid #2b2118;
+            border-radius: 6px;
+        }
+
+        .aviso {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #b3261e;
+        }
+
+        /* En celular las fotos se apilan */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.7rem; }
+            .fotos { flex-direction: column; align-items: center; }
+            .fotos img { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>SILLAS Y MIGUEL PAGUEN LA PINCHE CAMISA ALV</h1>
+        <h3>Estos sujetos no han pagado 170 pesos de su pinche camisa de piloteados</h3>
+        <h4>Se dará aviso por esta web cuando estos sujetos hayan realizado su pago</h4>
+        <p>Saludos :D</p>
+
+        <div class="fotos">
+            <img src="migue.jpeg" alt="Miguel">
+            <img src="sillas1.jpeg" alt="Sillas">
+            <img src="sillas2.jpeg" alt="Sillas otra vez">
+        </div>
+
+        <p class="aviso">SI LOS VEN, TÍRENLES CON UNA TORTA DE CARNE PREPARADA</p>
+    </div>
+</body>
+</html>
